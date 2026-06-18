@@ -1,5 +1,5 @@
 local ui_options = {
-	main_color = Color3.fromRGB(41, 74, 122),
+	main_color = Color3.fromRGB(170, 255, 195),
 	min_size = Vector2.new(400, 300),
 	toggle_key = Enum.KeyCode.RightShift,
 	can_resize = true,
@@ -181,7 +181,7 @@ Title.Position = UDim2.new(0, 30, 0, 3)
 Title.Size = UDim2.new(0, 200, 0, 20)
 Title.Font = Enum.Font.Garamond
 Title.Text = "Gamer Time"
-Title.TextColor3 = Color3.new(0, 0, 0)
+Title.TextColor3 = Color3.fromRGB(30, 30, 30)
 Title.TextSize = 17
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -236,7 +236,7 @@ TextBox.Font = Enum.Font.Garamond
 TextBox.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
 TextBox.PlaceholderText = "Input Text"
 TextBox.Text = ""
-TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
 TextBox.TextSize = 17
 
 TextBox_Roundify_4px.Name = "TextBox_Roundify_4px"
@@ -394,7 +394,7 @@ TabButton.Size = UDim2.new(0, 71, 0, 20)
 TabButton.ZIndex = 2
 TabButton.Font = Enum.Font.Garamond
 TabButton.Text = "Test tab"
-TabButton.TextColor3 = Color3.new(0, 0, 0.)
+TabButton.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
 TabButton.TextSize = 17
 
 TextButton_Roundify_4px_2.Name = "TextButton_Roundify_4px"
@@ -427,7 +427,7 @@ Button.Size = UDim2.new(1, 0, 0, 20)
 Button.ZIndex = 2
 Button.Font = Enum.Font.Garamond
 Button.Text = "      Folder"
-Button.TextColor3 = Color3.new(0, 0, 0)
+Button.TextColor3 = Color3.fromRGB(30, 30, 30)
 Button.TextSize = 17
 Button.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -529,7 +529,7 @@ Globals.BackgroundTransparency = 1
 Globals.Size = UDim2.new(1, 0, 1, 0)
 Globals.ZIndex = 5
 Globals.Font = Enum.Font.Code
-Globals.Text = ""
+Comments.Text = ""
 Globals.TextColor3 = Color3.new(0.517647, 0.839216, 0.968628)
 Globals.TextSize = 15
 Globals.TextXAlignment = Enum.TextXAlignment.Left
@@ -692,7 +692,7 @@ Switch.Size = UDim2.new(0, 20, 0, 20)
 Switch.ZIndex = 2
 Switch.Font = Enum.Font.Garamond
 Switch.Text = ""
-Switch.TextColor3 = Color3.new(1, 1, 1)
+Switch.TextColor3 = Color3.fromRGB(30, 30, 30)
 Switch.TextSize = 17
 
 TextButton_Roundify_4px_4.Name = "TextButton_Roundify_4px"
@@ -726,7 +726,7 @@ Button_2.BorderSizePixel = 0
 Button_2.Size = UDim2.new(0, 91, 0, 20)
 Button_2.ZIndex = 2
 Button_2.Font = Enum.Font.Garamond
-Button_2.TextColor3 = Color3.new(1, 1, 1)
+Button_2.TextColor3 = Color3.fromRGB(30, 30, 30)
 Button_2.TextSize = 17
 
 TextButton_Roundify_4px_5.Name = "TextButton_Roundify_4px"
@@ -803,7 +803,6 @@ Windows.BackgroundTransparency = 1
 Windows.Position = UDim2.new(0, 20, 0, 20)
 Windows.Size = UDim2.new(1, 20, 1, -20)
 
---[[ Script ]]--
 script.Parent = imgui
 
 local UIS = game:GetService("UserInputService")
