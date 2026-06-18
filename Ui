@@ -142,7 +142,7 @@ Toggle.Position = UDim2.new(0, 5, 0, -2)
 Toggle.Rotation = 90
 Toggle.Size = UDim2.new(0, 20, 0, 20)
 Toggle.ZIndex = 2
-Toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=92153157998990"
+Toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=98003173280742"
 
 Base.Name = "Base"
 Base.Parent = Bar
@@ -181,7 +181,7 @@ Title.Position = UDim2.new(0, 30, 0, 3)
 Title.Size = UDim2.new(0, 200, 0, 20)
 Title.Font = Enum.Font.Garamond
 Title.Text = "Gamer Time"
-Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextColor3 = Color3.new(0, 0, 0)
 Title.TextSize = 17
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -236,7 +236,7 @@ TextBox.Font = Enum.Font.Garamond
 TextBox.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
 TextBox.PlaceholderText = "Input Text"
 TextBox.Text = ""
-TextBox.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+TextBox.TextColor3 = Color3.new(0, 0, 0)
 TextBox.TextSize = 17
 
 TextBox_Roundify_4px.Name = "TextBox_Roundify_4px"
