@@ -1,5 +1,5 @@
 local ui_options = {
-	main_color = Color3.fromRGB(170, 255, 195),
+	main_color = Color3.fromRGB(26, 188, 156),
 	min_size = Vector2.new(400, 300),
 	toggle_key = Enum.KeyCode.RightShift,
 	can_resize = true,
@@ -92,7 +92,6 @@ Prefabs.BackgroundColor3 = Color3.new(1, 1, 1)
 Prefabs.Size = UDim2.new(0, 100, 0, 100)
 Prefabs.Visible = false
 
-
 Label.Name = "Label"
 Label.Parent = Prefabs
 Label.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -114,7 +113,8 @@ Window.Position = UDim2.new(0, 20, 0, 20)
 Window.Selectable = true
 Window.Size = UDim2.new(0, 200, 0, 200)
 Window.Image = "rbxassetid://2851926732"
-Window.ImageColor3 = Color3.new(0.0823529, 0.0862745, 0.0901961)
+Window.ImageColor3 = Color3.fromRGB(10, 32, 26) -- พื้นหลังสีเขียวมิ้นท์เข้มอมดำ
+Window.ImageTransparency = 0.22 -- พื้นหลังใสแต่ไม่มาก (ระดับเดียวกับรูปอ้างอิง)
 Window.ScaleType = Enum.ScaleType.Slice
 Window.SliceCenter = Rect.new(12, 12, 12, 12)
 
@@ -129,7 +129,7 @@ Resizer.Size = UDim2.new(0, 20, 0, 20)
 
 Bar.Name = "Bar"
 Bar.Parent = Window
-Bar.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+Bar.BackgroundColor3 = Color3.fromRGB(26, 188, 156) -- แถบเมนูด้านบนสีเขียวมิ้นท์ทึบแสง
 Bar.BorderSizePixel = 0
 Bar.Position = UDim2.new(0, 0, 0, 5)
 Bar.Size = UDim2.new(1, 0, 0, 15)
@@ -146,12 +146,12 @@ Toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&as
 
 Base.Name = "Base"
 Base.Parent = Bar
-Base.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+Base.BackgroundColor3 = Color3.fromRGB(26, 188, 156)
 Base.BorderSizePixel = 0
 Base.Position = UDim2.new(0, 0, 0.800000012, 0)
 Base.Size = UDim2.new(1, 0, 0, 10)
 Base.Image = "rbxassetid://2851926732"
-Base.ImageColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+Base.ImageColor3 = Color3.fromRGB(26, 188, 156)
 Base.ScaleType = Enum.ScaleType.Slice
 Base.SliceCenter = Rect.new(12, 12, 12, 12)
 
@@ -162,7 +162,7 @@ Top.BackgroundTransparency = 1
 Top.Position = UDim2.new(0, 0, 0, -5)
 Top.Size = UDim2.new(1, 0, 0, 10)
 Top.Image = "rbxassetid://2851926732"
-Top.ImageColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+Top.ImageColor3 = Color3.fromRGB(26, 188, 156)
 Top.ScaleType = Enum.ScaleType.Slice
 Top.SliceCenter = Rect.new(12, 12, 12, 12)
 
@@ -193,7 +193,7 @@ TabSelection.Position = UDim2.new(0, 15, 0, 30)
 TabSelection.Size = UDim2.new(1, -30, 0, 25)
 TabSelection.Visible = false
 TabSelection.Image = "rbxassetid://2851929490"
-TabSelection.ImageColor3 = Color3.new(0.145098, 0.14902, 0.156863)
+TabSelection.ImageColor3 = Color3.fromRGB(14, 44, 36) -- พื้นหลังแถบเลือกแท็บ
 TabSelection.ScaleType = Enum.ScaleType.Slice
 TabSelection.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -209,8 +209,8 @@ UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0, 2)
 
 Frame.Parent = TabSelection
-Frame.BackgroundColor3 = Color3.new(0.12549, 0.227451, 0.372549)
-Frame.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Frame.BackgroundColor3 = Color3.fromRGB(26, 188, 156) -- เส้นคั่นใต้แท็บ
+Frame.BorderColor3 = Color3.fromRGB(16, 118, 98)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0, 0, 1, 0)
 Frame.Size = UDim2.new(1, 0, 0, 2)
@@ -245,7 +245,7 @@ TextBox_Roundify_4px.BackgroundColor3 = Color3.new(1, 1, 1)
 TextBox_Roundify_4px.BackgroundTransparency = 1
 TextBox_Roundify_4px.Size = UDim2.new(1, 0, 1, 0)
 TextBox_Roundify_4px.Image = "rbxassetid://2851929490"
-TextBox_Roundify_4px.ImageColor3 = Color3.new(0.203922, 0.207843, 0.219608)
+TextBox_Roundify_4px.ImageColor3 = Color3.fromRGB(16, 48, 38)
 TextBox_Roundify_4px.ScaleType = Enum.ScaleType.Slice
 TextBox_Roundify_4px.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -256,7 +256,7 @@ Slider.BackgroundTransparency = 1
 Slider.Position = UDim2.new(0, 0, 0.178571433, 0)
 Slider.Size = UDim2.new(1, 0, 0, 20)
 Slider.Image = "rbxassetid://2851929490"
-Slider.ImageColor3 = Color3.new(0.145098, 0.14902, 0.156863)
+Slider.ImageColor3 = Color3.fromRGB(16, 48, 38)
 Slider.ScaleType = Enum.ScaleType.Slice
 Slider.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -278,7 +278,7 @@ Indicator.BackgroundColor3 = Color3.new(1, 1, 1)
 Indicator.BackgroundTransparency = 1
 Indicator.Size = UDim2.new(0, 0, 0, 20)
 Indicator.Image = "rbxassetid://2851929490"
-Indicator.ImageColor3 = Color3.new(0.254902, 0.262745, 0.278431)
+Indicator.ImageColor3 = Color3.fromRGB(26, 188, 156)
 Indicator.ScaleType = Enum.ScaleType.Slice
 Indicator.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -357,7 +357,7 @@ Box.Position = UDim2.new(0, 0, 0, 25)
 Box.Size = UDim2.new(1, 0, 0, 150)
 Box.ZIndex = 3
 Box.Image = "rbxassetid://2851929490"
-Box.ImageColor3 = Color3.new(0.129412, 0.133333, 0.141176)
+Box.ImageColor3 = Color3.fromRGB(12, 36, 28) -- กล่องรายการ Dropdown ตอนกาง
 Box.ScaleType = Enum.ScaleType.Slice
 Box.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -380,13 +380,13 @@ TextButton_Roundify_4px.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_Roundify_4px.BackgroundTransparency = 1
 TextButton_Roundify_4px.Size = UDim2.new(1, 0, 1, 0)
 TextButton_Roundify_4px.Image = "rbxassetid://2851929490"
-TextButton_Roundify_4px.ImageColor3 = Color3.new(0.203922, 0.207843, 0.219608)
+TextButton_Roundify_4px.ImageColor3 = Color3.fromRGB(16, 48, 38)
 TextButton_Roundify_4px.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_4px.SliceCenter = Rect.new(4, 4, 4, 4)
 
 TabButton.Name = "TabButton"
 TabButton.Parent = Prefabs
-TabButton.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+TabButton.BackgroundColor3 = Color3.fromRGB(26, 188, 156)
 TabButton.BackgroundTransparency = 1
 TabButton.BorderSizePixel = 0
 TabButton.Position = UDim2.new(0.185185179, 0, 0, 0)
@@ -403,7 +403,7 @@ TextButton_Roundify_4px_2.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_Roundify_4px_2.BackgroundTransparency = 1
 TextButton_Roundify_4px_2.Size = UDim2.new(1, 0, 1, 0)
 TextButton_Roundify_4px_2.Image = "rbxassetid://2851929490"
-TextButton_Roundify_4px_2.ImageColor3 = Color3.new(0.203922, 0.207843, 0.219608)
+TextButton_Roundify_4px_2.ImageColor3 = Color3.fromRGB(16, 48, 38)
 TextButton_Roundify_4px_2.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_4px_2.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -414,13 +414,13 @@ Folder.BackgroundTransparency = 1
 Folder.Position = UDim2.new(0, 0, 0, 50)
 Folder.Size = UDim2.new(1, 0, 0, 20)
 Folder.Image = "rbxassetid://2851929490"
-Folder.ImageColor3 = Color3.new(0.0823529, 0.0862745, 0.0901961)
+Folder.ImageColor3 = Color3.fromRGB(12, 36, 28)
 Folder.ScaleType = Enum.ScaleType.Slice
 Folder.SliceCenter = Rect.new(4, 4, 4, 4)
 
 Button.Name = "Button"
 Button.Parent = Folder
-Button.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+Button.BackgroundColor3 = Color3.fromRGB(26, 188, 156)
 Button.BackgroundTransparency = 1
 Button.BorderSizePixel = 0
 Button.Size = UDim2.new(1, 0, 0, 20)
@@ -437,7 +437,7 @@ TextButton_Roundify_4px_3.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_Roundify_4px_3.BackgroundTransparency = 1
 TextButton_Roundify_4px_3.Size = UDim2.new(1, 0, 1, 0)
 TextButton_Roundify_4px_3.Image = "rbxassetid://2851929490"
-TextButton_Roundify_4px_3.ImageColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+TextButton_Roundify_4px_3.ImageColor3 = Color3.fromRGB(26, 188, 156)
 TextButton_Roundify_4px_3.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_4px_3.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -478,7 +478,7 @@ Console.BackgroundColor3 = Color3.new(1, 1, 1)
 Console.BackgroundTransparency = 1
 Console.Size = UDim2.new(1, 0, 0, 200)
 Console.Image = "rbxassetid://2851928141"
-Console.ImageColor3 = Color3.new(0.129412, 0.133333, 0.141176)
+Console.ImageColor3 = Color3.fromRGB(10, 32, 26) -- พื้นหลัง Console
 Console.ScaleType = Enum.ScaleType.Slice
 Console.SliceCenter = Rect.new(8, 8, 8, 8)
 
@@ -633,7 +633,7 @@ ColorPicker.BackgroundColor3 = Color3.new(1, 1, 1)
 ColorPicker.BackgroundTransparency = 1
 ColorPicker.Size = UDim2.new(0, 180, 0, 110)
 ColorPicker.Image = "rbxassetid://2851929490"
-ColorPicker.ImageColor3 = Color3.new(0.203922, 0.207843, 0.219608)
+ColorPicker.ImageColor3 = Color3.fromRGB(16, 48, 38)
 ColorPicker.ScaleType = Enum.ScaleType.Slice
 ColorPicker.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -701,7 +701,7 @@ TextButton_Roundify_4px_4.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_Roundify_4px_4.BackgroundTransparency = 1
 TextButton_Roundify_4px_4.Size = UDim2.new(1, 0, 1, 0)
 TextButton_Roundify_4px_4.Image = "rbxassetid://2851929490"
-TextButton_Roundify_4px_4.ImageColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+TextButton_Roundify_4px_4.ImageColor3 = Color3.fromRGB(26, 188, 156)
 TextButton_Roundify_4px_4.ImageTransparency = 0.5
 TextButton_Roundify_4px_4.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_4px_4.SliceCenter = Rect.new(4, 4, 4, 4)
@@ -720,7 +720,7 @@ Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
 Button_2.Name = "Button"
 Button_2.Parent = Prefabs
-Button_2.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+Button_2.BackgroundColor3 = Color3.fromRGB(26, 188, 156)
 Button_2.BackgroundTransparency = 1
 Button_2.BorderSizePixel = 0
 Button_2.Size = UDim2.new(0, 91, 0, 20)
@@ -735,13 +735,13 @@ TextButton_Roundify_4px_5.BackgroundColor3 = Color3.new(1, 1, 1)
 TextButton_Roundify_4px_5.BackgroundTransparency = 1
 TextButton_Roundify_4px_5.Size = UDim2.new(1, 0, 1, 0)
 TextButton_Roundify_4px_5.Image = "rbxassetid://2851929490"
-TextButton_Roundify_4px_5.ImageColor3 = Color3.new(0.160784, 0.290196, 0.478431)
+TextButton_Roundify_4px_5.ImageColor3 = Color3.fromRGB(26, 188, 156)
 TextButton_Roundify_4px_5.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_4px_5.SliceCenter = Rect.new(4, 4, 4, 4)
 
 DropdownButton.Name = "DropdownButton"
 DropdownButton.Parent = Prefabs
-DropdownButton.BackgroundColor3 = Color3.new(0.129412, 0.133333, 0.141176)
+DropdownButton.BackgroundColor3 = Color3.fromRGB(14, 42, 32)
 DropdownButton.BorderSizePixel = 0
 DropdownButton.Size = UDim2.new(1, 0, 0, 20)
 DropdownButton.ZIndex = 3
@@ -757,7 +757,7 @@ Keybind.BackgroundColor3 = Color3.new(1, 1, 1)
 Keybind.BackgroundTransparency = 1
 Keybind.Size = UDim2.new(0, 200, 0, 20)
 Keybind.Image = "rbxassetid://2851929490"
-Keybind.ImageColor3 = Color3.new(0.203922, 0.207843, 0.219608)
+Keybind.ImageColor3 = Color3.fromRGB(16, 48, 38)
 Keybind.ScaleType = Enum.ScaleType.Slice
 Keybind.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -792,7 +792,7 @@ Input_Roundify_4px.BackgroundColor3 = Color3.new(1, 1, 1)
 Input_Roundify_4px.BackgroundTransparency = 1
 Input_Roundify_4px.Size = UDim2.new(1, 0, 1, 0)
 Input_Roundify_4px.Image = "rbxassetid://2851929490"
-Input_Roundify_4px.ImageColor3 = Color3.new(0.290196, 0.294118, 0.313726)
+Input_Roundify_4px.ImageColor3 = Color3.fromRGB(22, 64, 50)
 Input_Roundify_4px.ScaleType = Enum.ScaleType.Slice
 Input_Roundify_4px.SliceCenter = Rect.new(4, 4, 4, 4)
 
@@ -837,7 +837,7 @@ local function Resize(part, new, _delay)
 	tween:Play()
 end
 
-local function rgbtohsv(r, g, b) -- idk who made this function, but thanks
+local function rgbtohsv(r, g, b)
 	r, g, b = r / 255, g / 255, b / 255
 	local max, min = math.max(r, g, b), math.min(r, g, b)
 	local h, s, v
@@ -954,7 +954,7 @@ function library:AddWindow(title, options)
 	Window.Size = UDim2.new(0, options.min_size.X, 0, options.min_size.Y)
 	Window.ZIndex = Window.ZIndex + (windows * 10)
 
-	do -- Altering Window Color
+	do
 		local Title = Window:FindFirstChild("Title")
 		local Bar = Window:FindFirstChild("Bar")
 		local Base = Bar:FindFirstChild("Base")
@@ -981,14 +981,13 @@ function library:AddWindow(title, options)
 	local window_data = {}
 	Window.Draggable = true
 
-	do -- Resize Window
+	do
 		local oldIcon = mouse.Icon
 		local Entered = false
 		Resizer.MouseEnter:Connect(function()
 			Window.Draggable = false
 			if options.can_resize then
 				oldIcon = mouse.Icon
-				-- mouse.Icon = "http://www.roblox.com/asset?id=4745131330"
 			end
 			Entered = true
 		end)
@@ -1006,7 +1005,7 @@ function library:AddWindow(title, options)
 			if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
 				Held = true
 
-				spawn(function() -- Loop check
+				spawn(function()
 					if Entered and Resizer.Active and options.can_resize then
 						while Held and Resizer.Active do
 
@@ -1014,7 +1013,6 @@ function library:AddWindow(title, options)
 							local x = mouse_location.X - Window.AbsolutePosition.X
 							local y = mouse_location.Y - Window.AbsolutePosition.Y
 
-							--
 							if x >= options.min_size.X and y >= options.min_size.Y then
 								Resize(Window, {Size = UDim2.new(0, x, 0, y)}, options.tween_time)
 							elseif x >= options.min_size.X then
@@ -1038,7 +1036,7 @@ function library:AddWindow(title, options)
 		end)
 	end
 
-	do -- [Open / Close] Window
+	do
 		local open_close = Window:FindFirstChild("Bar"):FindFirstChild("Toggle")
 		local open = true
 		local canopen = true
@@ -1050,8 +1048,6 @@ function library:AddWindow(title, options)
 				canopen = false
 
 				if open then
-					-- Close
-
 					oldwindowdata = {}
 					for i,v in next, Window:FindFirstChild("Tabs"):GetChildren() do
 						oldwindowdata[v] = v.Visible
@@ -1066,8 +1062,6 @@ function library:AddWindow(title, options)
 					open_close.Parent:FindFirstChild("Base").Transparency = 1
 
 				else
-					-- Open
-
 					for i,v in next, oldwindowdata do
 						i.Visible = v
 					end
@@ -1088,12 +1082,12 @@ function library:AddWindow(title, options)
 		end)
 	end
 
-	do -- UI Elements
+	do
 		local tabs = Window:FindFirstChild("Tabs")
 		local tab_selection = Window:FindFirstChild("TabSelection")
 		local tab_buttons = tab_selection:FindFirstChild("TabButtons")
 
-		do -- Add Tab
+		do
 			function window_data:AddTab(tab_name)
 				local tab_data = {}
 				tab_name = tostring(tab_name or "New Tab")
@@ -1114,7 +1108,7 @@ function library:AddWindow(title, options)
 					if dropdown_open then return end
 					for i, v in next, tab_buttons:GetChildren() do
 						if not (v:IsA("UIListLayout")) then
-							v:GetChildren()[1].ImageColor3 = Color3.fromRGB(52, 53, 56)
+							v:GetChildren()[1].ImageColor3 = Color3.fromRGB(16, 48, 38)
 							Resize(v, {Size = UDim2.new(0, v.AbsoluteSize.X, 0, 20)}, options.tween_time)
 						end
 					end
@@ -1123,7 +1117,7 @@ function library:AddWindow(title, options)
 					end
 
 					Resize(new_button, {Size = UDim2.new(0, new_button.AbsoluteSize.X, 0, 25)}, options.tween_time)
-					new_button:GetChildren()[1].ImageColor3 = Color3.fromRGB(73, 75, 79)
+					new_button:GetChildren()[1].ImageColor3 = options.main_color
 					new_tab.Visible = true
 				end
 
@@ -1135,9 +1129,9 @@ function library:AddWindow(title, options)
 					show()
 				end
 
-				do -- Tab Elements
+				do
 
-					function tab_data:AddLabel(label_text) -- [Label]
+					function tab_data:AddLabel(label_text)
 						label_text = tostring(label_text or "New Label")
 
 						local label = Prefabs:FindFirstChild("Label"):Clone()
@@ -1150,7 +1144,7 @@ function library:AddWindow(title, options)
 						return label
 					end
 
-					function tab_data:AddButton(button_text, callback) -- [Button]
+					function tab_data:AddButton(button_text, callback)
 						button_text = tostring(button_text or "New Button")
 						callback = typeof(callback) == "function" and callback or function()end
 
@@ -1179,7 +1173,7 @@ function library:AddWindow(title, options)
 						return button
 					end
 
-					function tab_data:AddSwitch(switch_text, callback) -- [Switch]
+					function tab_data:AddSwitch(switch_text, callback)
 						local switch_data = {}
 
 						switch_text = tostring(switch_text or "New Switch")
@@ -1274,7 +1268,7 @@ function library:AddWindow(title, options)
 
 						title.Text = slider_text
 
-						do -- Slider Math
+						do
 							local Entered = false
 							slider.MouseEnter:Connect(function()
 								Entered = true
@@ -1290,7 +1284,7 @@ function library:AddWindow(title, options)
 								if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
 									Held = true
 
-									spawn(function() -- Loop check
+									spawn(function()
 										if Entered and not slider_options.readonly then
 											while Held and (not dropdown_open) do
 												local mouse_location = gMouse()
@@ -1377,7 +1371,7 @@ function library:AddWindow(title, options)
 						title.Text = "  " .. keybind_name
 						keybind.Size = UDim2.new(0, gNameLen(title) + 80, 0, 20)
 
-						local shortkeys = { -- thanks to stroketon for helping me out with this
+						local shortkeys = {
 							RightControl = 'RightCtrl',
 							LeftControl = 'LeftCtrl',
 							LeftShift = 'LShift',
@@ -1449,18 +1443,26 @@ function library:AddWindow(title, options)
 								objects.CanvasSize = UDim2.new(0, 0, (#objects:GetChildren() - 1) * 0.1, 0)
 							end
 
-							if open then -- Open
+							if open then
 								if dropdown_open then return end
 								dropdown_open = true
 								Resize(box, {Size = UDim2.new(1, 0, 0, len)}, options.tween_time)
 								Resize(indicator, {Rotation = 90}, options.tween_time)
-							else -- Close
+							else
 								dropdown_open = false
 								Resize(box, {Size = UDim2.new(1, 0, 0, 0)}, options.tween_time)
 								Resize(indicator, {Rotation = -90}, options.tween_time)
 							end
 
 						end)
+
+						function dropdown_data:Clear()
+							for _, obj in next, objects:GetChildren() do
+								if not obj:IsA("UIListLayout") then
+									obj:Destroy()
+								end
+							end
+						end
 
 						function dropdown_data:Add(n)
 							local object_data = {}
@@ -1476,7 +1478,7 @@ function library:AddWindow(title, options)
 								object.BackgroundColor3 = options.main_color
 							end)
 							object.MouseLeave:Connect(function()
-								object.BackgroundColor3 = Color3.fromRGB(33, 34, 36)
+								object.BackgroundColor3 = Color3.fromRGB(14, 42, 32)
 							end)
 
 							if open then
@@ -1509,6 +1511,32 @@ function library:AddWindow(title, options)
 						return dropdown_data, dropdown
 					end
 
+					function tab_data:AddPlayerDropdown(dropdown_name, callback)
+						dropdown_name = tostring(dropdown_name or "Select Player")
+						local drop_data, drop_obj = tab_data:AddDropdown(dropdown_name, callback)
+
+						local function refresh_list()
+							drop_data:Clear()
+							for _, player in ipairs(ps:GetPlayers()) do
+								drop_data:Add(player.Name)
+							end
+						end
+
+						refresh_list()
+
+						local conn_add = ps.PlayerAdded:Connect(refresh_list)
+						local conn_rem = ps.PlayerRemoving:Connect(refresh_list)
+
+						drop_obj.AncestryChanged:Connect(function(_, parent)
+							if parent == nil then
+								conn_add:Disconnect()
+								conn_rem:Disconnect()
+							end
+						end)
+
+						return drop_data, drop_obj
+					end
+
 					function tab_data:AddColorPicker(callback)
 						local color_picker_data = {}
 						callback = typeof(callback) == "function" and callback or function()end
@@ -1525,7 +1553,7 @@ function library:AddWindow(title, options)
 						sample.ZIndex = sample.ZIndex + (windows * 10)
 						saturation.ZIndex = saturation.ZIndex + (windows * 10)
 
-						do -- Color Picker Math
+						do
 							local h = 0
 							local s = 1
 							local v = 1
@@ -1571,8 +1599,8 @@ function library:AddWindow(title, options)
 								if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
 									Held = true
 
-									spawn(function() -- Loop check
-										while Held and Entered1 and (not dropdown_open) do -- Palette
+									spawn(function()
+										while Held and Entered1 and (not dropdown_open) do
 											local mouse_location = gMouse()
 
 											local x = ((palette.AbsoluteSize.X - (mouse_location.X - palette.AbsolutePosition.X)) + 1)
@@ -1588,7 +1616,7 @@ function library:AddWindow(title, options)
 											RS.Heartbeat:Wait()
 										end
 
-										while Held and Entered2 and (not dropdown_open) do -- Saturation
+										while Held and Entered2 and (not dropdown_open) do
 											local mouse_location = gMouse()
 											local y = ((palette.AbsoluteSize.Y - (mouse_location.Y - palette.AbsolutePosition.Y)) + 1.5)
 											v = y / 100
@@ -1644,14 +1672,14 @@ function library:AddWindow(title, options)
 
 						Source.TextEditable = not console_options.readonly
 
-						do -- Syntax Zindex
+						do
 							for i,v in next, Source:GetChildren() do
 								v.ZIndex = v.ZIndex + (windows * 10) + 1
 							end
 						end
 						Source.Comments.ZIndex = Source.Comments.ZIndex + 1
 
-						do -- Highlighting (thanks to whoever made this)
+						do
 							local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
 							local global_env = {"getrawmetatable", "newcclosure", "islclosure", "setclipboard", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16", "load", "fire", "Fire"}
 
@@ -1921,7 +1949,7 @@ function library:AddWindow(title, options)
 						return ha_data, ha
 					end
 
-					function tab_data:AddFolder(folder_name) -- [Folder]
+					function tab_data:AddFolder(folder_name)
 						local folder_data = {}
 
 						folder_name = tostring(folder_name or "New Folder")
@@ -1960,10 +1988,10 @@ function library:AddWindow(title, options)
 
 						local open = false
 						button.MouseButton1Click:Connect(function()
-							if open then -- Close
+							if open then
 								Resize(toggle, {Rotation = 0}, options.tween_time)
 								objects.Visible = false
-							else -- Open
+							else
 								Resize(toggle, {Rotation = 90}, options.tween_time)
 								objects.Visible = true
 							end
